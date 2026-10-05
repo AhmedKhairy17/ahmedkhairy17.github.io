@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد خيري - Ahmed Khairy Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --accent-color: #004080;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #004080, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 0.5rem;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background: #eef5ff;
+            color: var(--accent-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>أحمد خيري أحمد</h1>
+        <p>Software Engineer & Arabic (MSA) Audio Specialist</p>
+    </header>
+
+    <div class="container">
+        <!-- قسم النبذة التعريفية والـ CV -->
+        <div class="card">
+            <h2>نبذة عني | Resume</h2>
+            <p>
+                مهندس تطبيقات ومتخصص في معالجة وتفريغ البيانات الصوتية للغة العربية الفصحى (MSA) وتقييم جودة نماذج الذكاء الاصطناعي (ASR & Audio Annotation). أجمع بين الدقة اللغوية والخبرة التقنية في تطوير البرمجيات وقواعد البيانات.
+            </p>
+            
+            <div class="btn-container">
+                <!-- زر فتح وتنزيل الـ CV -->
+                <a href="Ahmed_Khairy_CV.pdf" target="_blank" class="btn btn-primary">📄 عرض واستعراض السيرة الذاتية (CV)</a>
+                <a href="Ahmed_Khairy_CV.pdf" download class="btn btn-outline">⬇️ تحميل الـ CV</a>
+            </div>
+        </div>
+
+        <!-- قسم المهارات -->
+        <div class="card">
+            <h2>المهارات والتقنيات</h2>
+            <ul class="skills-list">
+                <li>Arabic (MSA) Transcription</li>
+                <li>Audio Annotation & Labeling</li>
+                <li>Speech Recognition (ASR) QA</li>
+                <li>Flutter & Dart</li>
+                <li>Python Automation</li>
+                <li>SQL & Databases</li>
+                <li>Remote Work & Timelines</li>
+            </ul>
+        </div>
+
+        <!-- قسم التواصل -->
+        <div class="card">
+            <h2>التواصل | Contact</h2>
+            <p>📧 البريد الإلكتروني: kaireyahmed17@gmail.com</p>
+            <p>📱 الهاتف: 01044077787</p>
+            <p>📍 الموقع: مطاي - المنيا - مصر</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Ahmed Khairy. All rights reserved.
+    </footer>
+
+</body>
+</html>
